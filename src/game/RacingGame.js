@@ -31,8 +31,18 @@ class RacingGame{
       OutputView.print('');
     }
 
+    return this.#winner();
   }
 
+  #winner(){
+    const distances = this.#player.map((car) => car.distance);
+    const farthest = Math.max(...distances);
+    const winner = this.#player.filter((car) => car.distance === farthest)
+    .map((car) => car.name).join(',');
+
+    return OutputView.winner(winner);
+    
+  }
 }
 
 export default RacingGame;
