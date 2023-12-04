@@ -9,7 +9,7 @@ export const InputView = {
 
     Validate.validateCars(splitCars);
 
-    return splitCars.map((car) => { return {name: car, point: 0}});
+    return splitCars.map((car) => { return {name: car.trim(), distance: 0}});
   },
 
   async getRepeatNumber(){
