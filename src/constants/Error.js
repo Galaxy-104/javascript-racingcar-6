@@ -13,6 +13,6 @@ const repeat = Object.freeze({
   natural: "1 이상의 자연수를 입력해주세요.",
 })
 
-export const ERROR = Object.freeze({
+export const INPUT_ERROR = Object.freeze({
   common, name, repeat
 })
