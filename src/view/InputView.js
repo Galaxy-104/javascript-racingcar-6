@@ -14,7 +14,10 @@ export const InputView = {
 
   async getRepeatNumber(){
     const repeatNumber = await Console.readLineAsync(RACING.input.repeat);
+    const number = Number(repeatNumber);
 
-    return repeatNumber;
+    Validate.validateRepeat(number);
+
+    return number;
   },
 }

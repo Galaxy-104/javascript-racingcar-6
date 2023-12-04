@@ -21,6 +21,25 @@ class Validate{
       }
     })
   }
+
+  static validateRepeat(number){
+    if(number === ''){
+      throw new Error(`[ERROR] ${INPUT_ERROR.common.blank}`)
+    }
+
+    if(isNaN(number)){
+      throw new Error(`[ERROR] ${INPUT_ERROR.repeat.notANumber}`)
+    }
+
+    if(number % 1 !== 0){
+      throw new Error(`[ERROR] ${INPUT_ERROR.repeat.natural}`)
+    }
+
+    if(number < 1){
+      throw new Error(`[ERROR] ${INPUT_ERROR.repeat.natural}`)
+    }
+
+  }
 }
 
 export default Validate
