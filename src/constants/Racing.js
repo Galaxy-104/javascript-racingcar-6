@@ -1,6 +1,6 @@
 const input = Object.freeze({
-  car: "경주할 자동차 이름을 입력하세요.(이름은 5글자 이하, 쉼표(,) 기준으로 구분)",
-  repeat: "시도할 횟수는 몇 회인가요?",
+  car: "경주할 자동차 이름을 입력하세요.(이름은 5글자 이하, 쉼표(,) 기준으로 구분)\n",
+  repeat: "시도할 횟수는 몇 회인가요?\n",
 })
 
 const output = Object.freeze({
